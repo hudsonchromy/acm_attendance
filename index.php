@@ -1,15 +1,12 @@
+<?php include('server.php')?>
 <HTML>
 	<head>
 		<title>ACM Attendance</title>
 	</head>
 	<body>
 		<form action="index.php" method="post">
-			<select name="club" size="4" multiple>
-			  <option value="volvo">EHC</option>
-			  <option value="saab">CPT</option>
-			  <option value="fiat">AI</option>
-			  <option value="audi">Other</option>
-			</select>
+			<button type="submit" name="login" class="btn">Check In</button>
+			<input type="text" name="username">
 		</form>
 	</body>
 </HTML>
