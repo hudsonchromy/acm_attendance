@@ -5,7 +5,8 @@
 	</head>
 	<body>
 		<form action="event.php" method="post">
-			<select name="club" size="4" multiple>
+			<select name="club">
+				<option disable="disabled" selected="selected">-- Select Event --</option>
 			  <option value="EHC">EHC</option>
 			  <option value="CPT">CPT</option>
 			  <option value="AI">AI</option>
