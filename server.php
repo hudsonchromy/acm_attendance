@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
 		echo "     ";
 		echo $DBNAME;
 		echo "     ";
-		$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
+		$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME) or die('Error: Unable to Connect');
 	$username = mysqli_real_escape_string($db, $_POST['username']);
 	$times = microtime(true);
 	$sql = "INSERT INTO checkins (username, timems, event) VALUES ('$username', $times, '$club')";
