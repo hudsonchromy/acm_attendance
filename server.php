@@ -11,9 +11,13 @@ if (isset($_POST['login'])) {
 		$PASSWORD = getenv('password');
 		$DBNAME = getenv('dbname');
 		echo $HOST;
+		echo "     ";
 		echo $USERNAME;
+		echo "     ";
 		echo $PASSWORD;
+		echo "     ";
 		echo $DBNAME;
+		echo "     ";
 		$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
 	$username = mysqli_real_escape_string($db, $_POST['username']);
 	$times = microtime(true);
