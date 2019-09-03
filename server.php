@@ -10,14 +10,6 @@ if (isset($_POST['login'])) {
 		$USERNAME = getenv('username');
 		$PASSWORD = getenv('password');
 		$DBNAME = getenv('dbname');
-		echo $HOST;
-		echo "     ";
-		echo $USERNAME;
-		echo "     ";
-		echo $PASSWORD;
-		echo "     ";
-		echo $DBNAME;
-		echo "     ";
 		$db = mysqli_connect("us-cdbr-iron-east-02.cleardb.net", "b712252c7b12bc", "1faea87e") or die('Error: Unable to Connect');
 	$username = mysqli_real_escape_string($db, $_POST['username']);
 	$times = microtime(true);
