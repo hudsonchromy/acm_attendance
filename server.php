@@ -14,6 +14,7 @@ if (isset($_POST['login'])) {
 	$username = mysqli_real_escape_string($db, $_POST['username']);
 	$times = microtime(true);
 	$sql = "INSERT INTO checkins (username, timems, event) VALUES ('$username', $times, '$club')";
+	echo $sql;
 	mysqli_query($db, $sql);
 }
 ?>
