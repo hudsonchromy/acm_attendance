@@ -1,0 +1,32 @@
+h1 {
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 40px;
+}
+input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 40px;
+}
+.btn {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	height: 22%;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
