@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
 	$USERNAME = getenv('username');
 	$PASSWORD = getenv('password');
 	$DBNAME = getenv('dbname');
-	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD) or die('Error: Unable to Connect');
+	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME) or die('Error: Unable to Connect');
 	$username = mysqli_real_escape_string($db, $_POST['username']);
 	$times = microtime(true);
 	$sql = "INSERT INTO checkins (username, timems, event) VALUES ('$username', $times, '$club')";
