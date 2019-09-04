@@ -17,6 +17,7 @@ if (isset($_POST['login'])) {
 	echo $sql;
 	$result = mysqli_query($db, $sql);
 	if (!$result) {
+		echo "here";
 		die('Error: ' . mysql_error() . ' in query ' . $sql);
 	}
 }
