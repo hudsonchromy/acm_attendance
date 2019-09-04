@@ -1,10 +1,16 @@
 <?
 session_start();
+if (!isset($_SESSION['event'])) {
+	$_SESSION['event'] = "-- Select Event --";
+}
 if (isset($_POST['eventSelect'])) {
 	$_SESSION['event'] = $_POST['club'];
 	header('location: index.php');
 }
 if (isset($_POST['login'])) {
+	if ($_SESSION['event'] == "-- Select Event --") {
+		header("location: event.php");
+	}
 	$club = $_SESSION['event'];
 	$HOST = getenv('host');
 	$USERNAME = getenv('username');
