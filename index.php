@@ -9,6 +9,7 @@
 	<body>
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/1158px-Auburn_Tigers_logo.svg.png">
 		<h1><?echo $_SESSION['event'];?> Check In</h1>
+		<h1>Fuck Turner</h1>
 		<form action="index.php" method="post">
 			<input placeholder="AU Username (abc0012)" type="text" name="username">
 			<br>
