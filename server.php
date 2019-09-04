@@ -16,7 +16,4 @@ if (isset($_POST['login'])) {
 	$sql = "INSERT INTO checkins (username, timems, event) VALUES ('$username', $times, '$club')";
 	echo $sql;
 	$result = mysqli_query($db, $sql);
-	if (!$result) {
-		echo "here";
-}
 ?>
