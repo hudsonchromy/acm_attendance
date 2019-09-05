@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
 		$PASSWORD = getenv('password');
 		$DBNAME = getenv('dbname');
 		$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME) or die('Error: Unable to Connect');
-		$username = strtolower(mysqli_real_escape_string($db, $_POST['username']));
+		$username = substr(strtolower(mysqli_real_escape_string($db, $_POST['username'])), 0, 7);
 
 		if (ctype_alpha(substr($username, 0, 3)) && ctype_digit(substr($username, 3, 4))) {
 			$times = microtime(true);
