@@ -34,6 +34,9 @@ if (isset($_POST['analyze'])) {
 	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME) or die('Error: Unable to Connect');
 	$start = mysqli_real_escape_string($db, $_POST['start']);
 	$end = mysqli_real_escape_string($db, $_POST['end']);
+
+	
+	
 	$find = "SELECT * FROM checkins WHERE timems BETWEEN $start AND $end" ;
 	$result = mysqli_query($db, $sql);
 	echo $find;
